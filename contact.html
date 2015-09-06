@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>«СПЭВ» производство катеров и лодок</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="css/main.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.min.js"></script> <!-- jquery 1.9.0 -->
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+	<script type="text/javascript" src="js/detect.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="aside">
+		<div class="aside-header">
+			<div class="logo"></div>
+			<div class="text">Производство катеров<br>и лодок</div>
+		</div>
+		<div class="aside-nav js-nav-scroller">
+			<ul class="nav-list">
+				<li class="nav-item"><a class="nav-link" href="#">О КОМПАНИИ</a></li>
+				<li class="nav-item"><a class="nav-link" href="products.html">ПРОДУКЦИЯ</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">СТАТЬИ</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">АКЦИИ</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">ДИЛЕРЫ</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
+			</ul>
+		</div>
+		<div class="aside-soc">
+			<a href="#" class="aside-soc__link vk"></a>
+			<a href="#" class="aside-soc__link fb"></a>
+			<a href="#" class="aside-soc__link tw"></a>
+			<a href="#" class="aside-soc__link yt"></a>
+		</div>
+		<div class="aside-footer">
+			<div class="logo"></div>
+			<div class="text">© 2015 «СПЭВ» <i>0+</i></div>
+		</div>
+	</div>
+
+	<div class="screen">
+		<div class="screen-container cover" id="myMap">
+
+		</div>
+
+		<script>
+			var map;
+			function initMap() {
+				map = new google.maps.Map(document.getElementById('myMap'), {
+					center: {lat: 59.889627, lng: 30.305},
+					scrollwheel: false,
+					zoom: 15
+				});
+				marker = new google.maps.Marker({
+					map: map,
+					draggable: true,
+					animation: google.maps.Animation.DROP,
+					icon: 'img/global/location.png',
+					position: {lat: 59.889627, lng: 30.289558}
+				});
+
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+	</div>
+
+	<div class="content opened">
+		<div class="content-header">
+		<div class="content-header__title">КОНТАКТЫ</div>
+	</div>
+		<div class="content-body content-body_contact js-content-scroller">
+			<div class="contact-wrap">
+				<div class="contact-box">
+					<table>
+						<thead>
+						<tr>
+							<th colspan="2">Центральный офис в Санкт-Петербурге:</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Адрес :</td>
+							<td>Россия, 198095, г. Санкт-Петербург, Химический переулок, дом 12 А</td>
+						</tr>
+						<tr>
+							<td>Метро :</td>
+							<td>Нарвская</td>
+						</tr>
+						<tr>
+							<td>Телефон :</td>
+							<td>
+								+7 (812) 252-6815 (многоканальный)<br>
+								+7 (921) 940-8308 (бухгалтерия)<br>
+								+7 (981) 842-3323 (производство)<br>
+								+7 (812) 252-0739 (факс)
+							</td>
+						</tr>
+						<tr>
+							<td>E-mail :</td>
+							<td>spev_spb@mail.ru, spevboat@gmail.com </td>
+						</tr>
+						<tr>
+							<td>Время работы :</td>
+							<td>ПН-СБ с 10:00 до 19:00 без перерыва на обед </td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="contact-box contact-box_light">
+					<table>
+						<thead>
+						<tr>
+							<th colspan="2">г.Москва</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Телефон :</td>
+							<td>+7 (495) 22-33-112 </td>
+						</tr>
+						<tr>
+							<td>Время работы :</td>
+							<td>ПН-ПТ с 9:00 до 18:00 без перерыва на обед<br>
+								СБ с 10:00 до 18:00 без перерыва на обед<br>
+								ВС - выходной</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div><!-- .wrapper -->
+</body>
+</html>
